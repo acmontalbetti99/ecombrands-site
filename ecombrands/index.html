@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ecom Brands LLC — Consumer e-commerce, built for how people discover products now</title>
+<meta name="description" content="Ecom Brands LLC is a U.S.-based consumer e-commerce company. We identify product opportunities, build consumer brands, grow them through original content and organic distribution, and operate the businesses behind them.">
+<meta name="theme-color" content="#060607">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/favicon.png">
+<meta property="og:title" content="Ecom Brands LLC">
+<meta property="og:description" content="A U.S.-based consumer e-commerce company building and operating digitally native consumer businesses.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ecombrands.us/">
+<meta property="og:image" content="/assets/img/logo-square.png">
+<link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jbmono-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<!-- ============================================================================
+     ADHOC VECTOR SYSTEM — drawn for Ecom Brands, not borrowed from an icon set.
+     Rules: 64×64 grid, hairline strokes, no fills except one signal accent per
+     mark, geometry that describes the actual idea (a press, a tolerance band,
+     a selection bracket) rather than a generic pictogram.
+     Accent is hard-coded #FF3D00 because <use> shadow content can't be reached
+     by page CSS; every mark sits on a dark ground, so it never needs to invert.
+     ============================================================================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+
+  <!-- MANUFACTURERS — a press closing on a formed unit -->
+
+  <!-- SUPPLIERS — held stock, feeding out reliably -->
+
+  <!-- SOURCING — a field of options, one selected -->
+
+  <!-- BUSINESS PARTNERS — two systems with a shared operating overlap -->
+
+  <!-- DISCOVERY — the product inside something someone chose to watch -->
+  <symbol id="gx-discovery" viewBox="0 0 64 64">
+    <rect x="19" y="8" width="26" height="48" rx="3"/>
+    <path d="M19 18h26M19 46h26" opacity=".4"/>
+    <rect x="26" y="26" width="12" height="12" stroke="#FF3D00"/>
+    <path d="M28 51h8" opacity=".5"/>
+  </symbol>
+
+  <!-- CURIOSITY — interest radiating before intent exists -->
+  <symbol id="gx-curiosity" viewBox="0 0 64 64">
+    <circle cx="20" cy="32" r="3.5" fill="#FF3D00" stroke="#FF3D00"/>
+    <path d="M28 23a13 13 0 010 18"/>
+    <path d="M35 17a22 22 0 010 30" opacity=".68"/>
+    <path d="M42 11a31 31 0 010 42" opacity=".38"/>
+  </symbol>
+
+  <!-- SEARCH — the consumer goes looking, and finds one match -->
+  <symbol id="gx-search" viewBox="0 0 64 64">
+    <circle cx="27" cy="27" r="14"/>
+    <path d="M37.5 37.5L52 52" stroke-linecap="square"/>
+    <path d="M20 24h14" opacity=".5"/>
+    <path d="M20 31h8" stroke="#FF3D00"/>
+  </symbol>
+
+  <!-- PURCHASE — attention arriving at a storefront we own -->
+  <symbol id="gx-purchase" viewBox="0 0 64 64">
+    <path d="M6 32h18"/>
+    <path d="M20 28l4 4-4 4"/>
+    <rect x="31" y="18" width="26" height="28" stroke="#FF3D00"/>
+    <path d="M31 26h26" stroke="#FF3D00" opacity=".6"/>
+    <path d="M38 35h12" opacity=".55"/>
+  </symbol>
+
+  <!-- SAMPLES — one unit pulled from the batch and examined -->
+
+  <!-- TERMS — two positions meeting on one line -->
+
+  <!-- VOLUME — order size moving, fast -->
+
+  <!-- CONSISTENCY — identical units inside a tolerance band -->
+
+</defs></svg>
+
+<!-- ================= HEADER ================= -->
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Ecom Brands LLC — home">
+      <img src="/assets/img/logo-white.png" alt="Ecom Brands">
+      <span class="tag">Ecom Brands LLC</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/about">About</a>
+      <a href="/how-we-build">How We Build</a>
+      <a href="/how-we-think">How We Think</a>
+      <a class="nav-cta" href="/work-with-us">Work with us&nbsp;→</a>
+    </nav>
+    <button class="burger" aria-expanded="false" aria-controls="sheet">Menu</button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet">
+  <a href="/about"><span>01</span> About</a>
+  <a href="/how-we-build"><span>02</span> How&nbsp;We&nbsp;Build</a>
+  <a href="/how-we-think"><span>03</span> How&nbsp;We&nbsp;Think</a>
+  <a href="/work-with-us"><span>04</span> Work&nbsp;With&nbsp;Us</a>
+  <div class="foot">
+    <p class="mono mono--mid">hello@ecombrands.us</p>
+    <p class="mono">Newark, Delaware · United States</p>
+  </div>
+</div>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero" data-lit>
+  <canvas id="dots" aria-hidden="true"></canvas>
+  <div class="hero-veil" aria-hidden="true"></div>
+
+  <div class="wrap above">
+
+    <div class="rail">
+      <span class="mono mono--mid"><i class="dot"></i>Operating</span>
+      <span class="mono">Ecom Brands LLC</span>
+      <span class="mono">Newark, Delaware · United States</span>
+      <span class="sp"></span>
+      <span class="mono hide-sm">39.6837° N / 75.7497° W</span>
+      <span class="mono mono--sig" data-clock>00:00 UTC</span>
+    </div>
+
+    <h1 class="display display--xl">
+      <span class="reveal-line"><span style="--i:0">We identify<i class="pd">.</i></span></span>
+      <span class="reveal-line"><span style="--i:1">We build<i class="pd">.</i></span></span>
+      <span class="reveal-line"><span style="--i:2">We grow<i class="pd">.</i></span></span>
+      <span class="reveal-line"><span style="--i:3">We scale<i class="pd">.</i></span></span>
+    </h1>
+
+    <div class="hero-foot">
+      <p class="lede lede--wide">
+        A U.S.-based consumer e-commerce company building and operating
+        digitally native consumer businesses — from the first product
+        opportunity to the systems that carry it.
+      </p>
+      <p class="body" style="max-width:34ch">
+        We work with manufacturers, suppliers and partners around the world
+        to bring consumer products to market.
+      </p>
+      <a class="btn" href="/work-with-us"><span>Work with us</span><span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 01 POSITION ================= -->
+<section class="band">
+  <div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap above">
+
+    <div class="marker up">
+      <span class="mono num">01</span>
+      <span class="mono mono--mid">Position</span>
+      <span class="fill"></span>
+      <span class="mono end">What the company is</span>
+    </div>
+
+    <div class="cols-sp">
+      <div class="stack">
+        <h2 class="h2 up">We turn products<br>into brands, and<br>attention into<br>demand.</h2>
+      </div>
+      <div class="stack">
+        <div class="body body--fg up" data-d="1" style="font-size:clamp(1rem,1.3vw,1.12rem)">
+          <p><strong>Ecom Brands LLC is a consumer e-commerce company, not a service business.</strong>
+          We do not run campaigns for other people's brands. We find product opportunities,
+          build consumer brands around them, produce the content that gives those products
+          a reason to be seen, and operate the direct-to-consumer businesses that result.</p>
+
+          <p>Everything we own sits at the intersection of consumer products and digital
+          distribution — product discovery, brand building, original content, social commerce,
+          direct-to-consumer commerce and the operations underneath all of it.</p>
+
+          <p>We are deliberately quiet about what we are currently building. The categories we
+          operate in, the products we are developing and the partners we work with are
+          commercially sensitive, and we treat them that way. What we can tell you is
+          how we work — which is what the rest of this site is for.</p>
+        </div>
+
+        <div class="mt-m up" data-d="2">
+          <a class="link" href="/about"><span>More about the company</span><span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 02 THE OPERATING SYSTEM ================= -->
+<section class="band" style="background:var(--black)">
+  <div class="wrap">
+
+    <div class="marker up">
+      <span class="mono num">02</span>
+      <span class="mono mono--mid">The operating system</span>
+      <span class="fill"></span>
+      <span class="mono end">Six modules · one loop</span>
+    </div>
+
+    <div class="cols-2" style="align-items:end;margin-bottom:clamp(26px,4vw,48px)">
+      <h2 class="h2 up">A repeatable<br>way to build a<br>consumer business.</h2>
+      <p class="body up" data-d="1" style="max-width:46ch">
+        Most consumer businesses are built once, by accident. We built ours as a system —
+        six modules that run in order and then run again. Each module has an input, an
+        output and a way of knowing whether it worked. Select one.
+      </p>
+    </div>
+
+    <div class="rack up" data-d="2" role="tablist" aria-label="Operating modules">
+
+      <button class="bay" role="tab" aria-expanded="true">
+        <span class="bay-top"><span class="bay-num">01</span><i class="bay-led" aria-hidden="true"></i></span>
+        <span class="bay-title">Identify</span>
+        <span class="bay-body">
+          <span class="bp">We look for products, behaviours and categories with the potential to become
+          businesses — not one-off sales. Demand signals, margin structure, shipping
+          reality, repeat potential and whether the product has something worth filming.</span>
+          <span class="bay-io mono">
+            <span>In → <b>Market signal, category research</b></span>
+            <span>Out → <b>A validated product thesis</b></span>
+          </span>
+        </span>
+      </button>
+
+      <button class="bay" role="tab" aria-expanded="false">
+        <span class="bay-top"><span class="bay-num">02</span><i class="bay-led" aria-hidden="true"></i></span>
+        <span class="bay-title">Build</span>
+        <span class="bay-body">
+          <span class="bp">An opportunity becomes a brand: name, positioning, identity, packaging,
+          pricing architecture and a storefront built to convert. The product has to be
+          worth remembering before it is worth promoting.</span>
+          <span class="bay-io mono">
+            <span>In → <b>Product thesis, supply</b></span>
+            <span>Out → <b>A brand and a DTC storefront</b></span>
+          </span>
+        </span>
+      </button>
+
+      <button class="bay" role="tab" aria-expanded="false">
+        <span class="bay-top"><span class="bay-num">03</span><i class="bay-led" aria-hidden="true"></i></span>
+        <span class="bay-title">Create</span>
+        <span class="bay-body">
+          <span class="bp">Original content, made in-house, designed for the platform it lives on.
+          Not advertising dressed as content — content people choose to watch.
+          Concepts are tested in volume; the ones that earn attention get pushed.</span>
+          <span class="bay-io mono">
+            <span>In → <b>Product, brand, creative concepts</b></span>
+            <span>Out → <b>Content built to travel</b></span>
+          </span>
+        </span>
+      </button>
+
+      <button class="bay" role="tab" aria-expanded="false">
+        <span class="bay-top"><span class="bay-num">04</span><i class="bay-led" aria-hidden="true"></i></span>
+        <span class="bay-title">Distribute</span>
+        <span class="bay-body">
+          <span class="bp">Social is our distribution layer. TikTok, Instagram, Facebook and YouTube are
+          where the product is discovered, where curiosity is created and where reach is
+          earned rather than bought.</span>
+          <span class="bay-io mono">
+            <span>In → <b>Content</b></span>
+            <span>Out → <b>Organic reach and product awareness</b></span>
+          </span>
+        </span>
+      </button>
+
+      <button class="bay" role="tab" aria-expanded="false">
+        <span class="bay-top"><span class="bay-num">05</span><i class="bay-led" aria-hidden="true"></i></span>
+        <span class="bay-title">Convert</span>
+        <span class="bay-body">
+          <span class="bp">Attention only matters if it has somewhere to go. Interested consumers arrive
+          at a storefront we own and operate, built around the specific thing that made
+          them curious in the first place.</span>
+          <span class="bay-io mono">
+            <span>In → <b>Attention, traffic</b></span>
+            <span>Out → <b>Direct-to-consumer orders</b></span>
+          </span>
+        </span>
+      </button>
+
+      <button class="bay" role="tab" aria-expanded="false">
+        <span class="bay-top"><span class="bay-num">06</span><i class="bay-led" aria-hidden="true"></i></span>
+        <span class="bay-title">Scale</span>
+        <span class="bay-body">
+          <span class="bp">What works gets systems: supply that holds under volume, fulfilment that holds
+          under pressure, and the operating discipline to run several brands at once.
+          Then the loop starts again.</span>
+          <span class="bay-io mono">
+            <span>In → <b>A business that works</b></span>
+            <span>Out → <b>Volume, and the next thesis</b></span>
+          </span>
+        </span>
+      </button>
+
+    </div>
+
+    <div class="loopline up" data-d="3">
+      <span class="mono mono--sig">06 → 01</span>
+      <span class="seg"></span>
+      <span class="mono">The loop returns. Every business we run teaches us what to look for next.</span>
+    </div>
+
+    <div class="mt-l up">
+      <a class="link" href="/how-we-build"><span>The full breakdown</span><span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CAPABILITY MARQUEE ================= -->
+<div class="marq" aria-hidden="true">
+  <div class="marq-in">
+    <span>Consumer products</span><span>Product discovery</span><span>Brand building</span><span>Original content</span><span>Social commerce</span><span>Organic distribution</span><span>Direct-to-consumer</span><span>Consumer behaviour</span><span>E-commerce operations</span><span>Global sourcing</span>
+    <span>Consumer products</span><span>Product discovery</span><span>Brand building</span><span>Original content</span><span>Social commerce</span><span>Organic distribution</span><span>Direct-to-consumer</span><span>Consumer behaviour</span><span>E-commerce operations</span><span>Global sourcing</span>
+  </div>
+</div>
+<p class="sr">Ecom Brands works across consumer products, product discovery, brand building, original content, social commerce, organic distribution, direct-to-consumer commerce, consumer behaviour, e-commerce operations and global sourcing.</p>
+
+<!-- ================= 03 THE SHELF MOVED ================= -->
+<section class="band" style="background:var(--ink-1)">
+  <div class="wrap">
+
+    <div class="marker up">
+      <span class="mono num">03</span>
+      <span class="mono mono--mid">How we think</span>
+      <span class="fill"></span>
+      <span class="mono end">The premise</span>
+    </div>
+
+    <h2 class="display display--sm up" style="max-width:16ch">
+      The internet changed<br>the product shelf.
+    </h2>
+
+    <div class="cols-2 mt-l" style="align-items:start">
+      <p class="lede up" data-d="1">
+        The shelf used to be a store.<br>Now it looks like a feed.
+      </p>
+      <p class="body up" data-d="2" style="max-width:46ch">
+        Consumers no longer walk past a product and decide. They are shown something,
+        they become curious, they search for it, and then they buy it — often within
+        minutes, often from a brand they had never heard of that morning.
+        That sequence is the whole business.
+      </p>
+    </div>
+
+    <div class="flow mt-l">
+      <div style="--i:0">
+        <span class="mono mono--sig">Step 01</span>
+        <svg class="gx" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#gx-discovery"/></svg>
+        <h4>Discovery</h4>
+        <p>A product appears inside content someone actually wanted to watch.</p>
+      </div>
+      <div style="--i:1">
+        <span class="mono mono--sig">Step 02</span>
+        <svg class="gx" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#gx-curiosity"/></svg>
+        <h4>Curiosity</h4>
+        <p>Interest forms before intent does. This is the part most companies skip.</p>
+      </div>
+      <div style="--i:2">
+        <span class="mono mono--sig">Step 03</span>
+        <svg class="gx" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#gx-search"/></svg>
+        <h4>Search</h4>
+        <p>The consumer goes looking. The brand has to be findable when they do.</p>
+      </div>
+      <div style="--i:3">
+        <span class="mono mono--sig">Step 04</span>
+        <svg class="gx" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#gx-purchase"/></svg>
+        <h4>Purchase</h4>
+        <p>A storefront we own, built around the exact thing that caught them.</p>
+      </div>
+    </div>
+
+    <div class="mt-l up">
+      <a class="link" href="/how-we-think"><span>Read the full argument</span><span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= 04 GLOBAL ================= -->
+<section class="band">
+  <div class="wrap">
+
+    <div class="marker up">
+      <span class="mono num">04</span>
+      <span class="mono mono--mid">Reach</span>
+      <span class="fill"></span>
+      <span class="mono end">U.S. entity · global operation</span>
+    </div>
+
+    <div class="cols-sp">
+      <h2 class="h2 up">Registered in<br>Delaware.<br>Sourced<br>globally.</h2>
+      <div class="stack">
+        <p class="body body--fg up" data-d="1" style="max-width:48ch;font-size:clamp(1rem,1.3vw,1.12rem)">
+          Ecom Brands LLC is incorporated in the United States and operates internationally.
+          Consumer products are not built in one country, and neither are we: we work with
+          manufacturers, suppliers and sourcing partners across multiple regions and time zones.
+        </p>
+        <p class="body up" data-d="2" style="max-width:48ch">
+          If you manufacture or supply consumer goods, the practical answer to
+          <em>“where are you based?”</em> is: a U.S. company that works on your hours.
+        </p>
+
+        <div class="utc up" data-d="3">
+          <div class="mono mono--mid" style="padding-bottom:12px">Working hours across the map · live</div>
+          <div class="utc-scale" aria-hidden="true"></div>
+          <div class="utc-marks">
+            <span class="mono">UTC−12</span>
+            <span class="mono">UTC−05 · HQ</span>
+            <span class="mono">UTC+00</span>
+            <span class="mono">UTC+14</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="band invert cta-band">
+  <div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap above">
+    <div class="marker up">
+      <span class="mono num">05</span>
+      <span class="mono mono--mid">Work with us</span>
+      <span class="fill"></span>
+      <span class="mono end">Manufacturers · Suppliers · Partners</span>
+    </div>
+
+    <h2 class="display up" style="max-width:13ch">Let's put<br>something<br>on the shelf.</h2>
+
+    <div class="cols-2" style="align-items:end">
+      <p class="lede up" data-d="1" style="max-width:38ch">
+        We are actively looking for manufacturing and supply partners for consumer
+        products. If that is you, the conversation is short and direct.
+      </p>
+      <div class="stack-sm up" data-d="2" style="justify-items:start">
+        <a class="btn" href="/work-with-us"><span>Send inquiry</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a class="mono mono--mid" style="padding-top:10px" href="mailto:hello@ecombrands.us">hello@ecombrands.us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div>
+        <img class="mark" src="/assets/img/logo-white.png" alt="Ecom Brands">
+        <p class="body" style="max-width:30ch;font-size:.93rem">
+          Building and operating digitally native consumer businesses.
+        </p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/how-we-build">How We Build</a></li>
+          <li><a href="/how-we-think">How We Think</a></li>
+          <li><a href="/work-with-us">Work With Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Partners</h5>
+        <ul>
+          <li><a href="/work-with-us#inquiry">Manufacturers</a></li>
+          <li><a href="/work-with-us#inquiry">Suppliers &amp; sourcing</a></li>
+          <li><a href="/work-with-us#inquiry">Business partnerships</a></li>
+          <li><a href="/work-with-us#inquiry">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <address>
+          Ecom Brands LLC<br>
+          Newark, Delaware<br>
+          United States<br>
+          <a href="mailto:hello@ecombrands.us">hello@ecombrands.us</a>
+        </address>
+      </div>
+    </div>
+    <div class="ftr-bot">
+      <span class="mono">© <span data-year>2026</span> Ecom Brands LLC · All rights reserved</span>
+      <span class="mono">ecombrands.us</span>
+      <span class="mono">Newark, DE · United States</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

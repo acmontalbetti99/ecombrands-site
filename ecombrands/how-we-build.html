@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How We Build — Ecom Brands LLC</title>
+<meta name="description" content="The Ecom Brands operating system: identify, build, create, distribute, convert, scale. Six modules that turn a product opportunity into a consumer business.">
+<meta name="theme-color" content="#060607">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/favicon.png">
+<meta property="og:title" content="How We Build — Ecom Brands LLC">
+<meta property="og:description" content="Six modules that turn a product opportunity into a consumer business.">
+<meta property="og:image" content="/assets/img/logo-square.png">
+<link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jbmono-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<!-- ============================================================================
+     ADHOC VECTOR SYSTEM — drawn for Ecom Brands, not borrowed from an icon set.
+     Rules: 64×64 grid, hairline strokes, no fills except one signal accent per
+     mark, geometry that describes the actual idea (a press, a tolerance band,
+     a selection bracket) rather than a generic pictogram.
+     Accent is hard-coded #FF3D00 because <use> shadow content can't be reached
+     by page CSS; every mark sits on a dark ground, so it never needs to invert.
+     ============================================================================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+
+  <!-- MANUFACTURERS — a press closing on a formed unit -->
+
+  <!-- SUPPLIERS — held stock, feeding out reliably -->
+
+  <!-- SOURCING — a field of options, one selected -->
+
+  <!-- BUSINESS PARTNERS — two systems with a shared operating overlap -->
+
+  <!-- DISCOVERY — the product inside something someone chose to watch -->
+
+  <!-- CURIOSITY — interest radiating before intent exists -->
+
+  <!-- SEARCH — the consumer goes looking, and finds one match -->
+
+  <!-- PURCHASE — attention arriving at a storefront we own -->
+
+  <!-- SAMPLES — one unit pulled from the batch and examined -->
+  <symbol id="gx-samples" viewBox="0 0 64 64">
+    <rect x="7" y="38" width="14" height="14"/><rect x="25" y="38" width="14" height="14"/><rect x="43" y="38" width="14" height="14"/>
+    <rect x="25" y="10" width="14" height="14" stroke="#FF3D00"/>
+    <path d="M32 27v8" stroke="#FF3D00" stroke-dasharray="2 3"/>
+  </symbol>
+
+  <!-- TERMS — two positions meeting on one line -->
+  <symbol id="gx-terms" viewBox="0 0 64 64">
+    <path d="M32 9v46" opacity=".5"/>
+    <path d="M10 20h16M10 30h16M10 40h16" opacity=".75"/>
+    <path d="M38 20h16M38 30h16" opacity=".75"/>
+    <path d="M38 40h16" stroke="#FF3D00"/>
+    <circle cx="32" cy="40" r="3" fill="#FF3D00" stroke="#FF3D00"/>
+  </symbol>
+
+  <!-- VOLUME — order size moving, fast -->
+  <symbol id="gx-volume" viewBox="0 0 64 64">
+    <rect x="8" y="40" width="13" height="13"/>
+    <rect x="25" y="40" width="13" height="13"/><rect x="25" y="25" width="13" height="13"/>
+    <rect x="42" y="40" width="13" height="13" stroke="#FF3D00"/>
+    <rect x="42" y="25" width="13" height="13" stroke="#FF3D00"/>
+    <rect x="42" y="10" width="13" height="13" stroke="#FF3D00"/>
+  </symbol>
+
+  <!-- CONSISTENCY — identical units inside a tolerance band -->
+  <symbol id="gx-consistency" viewBox="0 0 64 64">
+    <path d="M6 20h52M6 44h52" stroke-dasharray="3 4" opacity=".5"/>
+    <rect x="10" y="25" width="12" height="14"/>
+    <rect x="26" y="25" width="12" height="14"/>
+    <rect x="42" y="25" width="12" height="14" stroke="#FF3D00"/>
+  </symbol>
+
+</defs></svg>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Ecom Brands LLC — home">
+      <img src="/assets/img/logo-white.png" alt="Ecom Brands">
+      <span class="tag">Ecom Brands LLC</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/about">About</a>
+      <a href="/how-we-build" aria-current="page">How We Build</a>
+      <a href="/how-we-think">How We Think</a>
+      <a class="nav-cta" href="/work-with-us">Work with us&nbsp;→</a>
+    </nav>
+    <button class="burger" aria-expanded="false" aria-controls="sheet">Menu</button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet">
+  <a href="/about"><span>01</span> About</a>
+  <a href="/how-we-build"><span>02</span> How&nbsp;We&nbsp;Build</a>
+  <a href="/how-we-think"><span>03</span> How&nbsp;We&nbsp;Think</a>
+  <a href="/work-with-us"><span>04</span> Work&nbsp;With&nbsp;Us</a>
+  <div class="foot">
+    <p class="mono mono--mid">hello@ecombrands.us</p>
+    <p class="mono">Newark, Delaware · United States</p>
+  </div>
+</div>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero hero--page" data-lit>
+  <div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap above">
+    <div class="rail">
+      <span class="mono mono--sig">02</span>
+      <span class="mono mono--mid">How we build</span>
+      <span class="sp"></span>
+      <span class="mono">Six modules · one loop</span>
+    </div>
+
+    <h1 class="display">
+      <span class="reveal-line"><span style="--i:0">The operating</span></span>
+      <span class="reveal-line"><span style="--i:1">system<i class="pd">.</i></span></span>
+    </h1>
+
+    <div class="hero-foot">
+      <p class="lede lede--wide">
+        A consumer business is not one decision. It is six, made in order,
+        and then made again with better information.
+      </p>
+      <p class="body" style="max-width:34ch">
+        Identify · Build · Create · Distribute · Convert · Scale
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PREAMBLE ================= -->
+<section class="band band--tight" style="background:var(--ink-1)">
+  <div class="wrap">
+    <div class="cols-sp">
+      <h2 class="h2 up">Why a system<br>at all.</h2>
+      <div class="body body--fg up" data-d="1" style="max-width:54ch;font-size:clamp(1rem,1.3vw,1.12rem)">
+        <p>Plenty of people have sold one product well. Almost none can explain why it worked,
+        which means almost none can do it twice. The difference between a lucky product and a
+        company is whether the process that produced it can be written down.</p>
+        <p>So ours is written down. Each module below has a defined input, a defined output and
+        a test for whether to continue. It is not complicated — it is just consistent, which in
+        consumer commerce turns out to be the rarer quality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MODULES ================= -->
+<section class="band">
+  <div class="wrap">
+    <div class="marker up">
+      <span class="mono num">M</span>
+      <span class="mono mono--mid">Modules</span>
+      <span class="fill"></span>
+      <span class="mono end">01 — 06</span>
+    </div>
+
+    <div class="mspec">
+
+      <!-- 01 -->
+      <div class="mspec-row up">
+        <span class="mspec-n">01</span>
+        <div class="mspec-main">
+          <h3 class="h3">Identify — find the opportunity.</h3>
+          <p class="body">
+            We look for products, behaviours and categories with the potential to become
+            businesses rather than single transactions. The filter is unglamorous: is there
+            demonstrated consumer interest, does the margin structure survive shipping and
+            returns, can it be manufactured to a standard we would put our name on, and —
+            the question most people forget — is there anything about it worth filming?
+          </p>
+          <p class="body mt-m">
+            A product with no visual argument has no organic distribution, and a product with
+            no organic distribution has to be bought its way to market. We would rather
+            not start there.
+          </p>
+        </div>
+        <div class="io">
+          <div class="io-block">
+            <span class="mono mono--sig">Input</span>
+            <ul><li>Category and market research</li><li>Consumer demand signals</li><li>Supply feasibility</li></ul>
+          </div>
+          <div class="io-block">
+            <span class="mono mono--sig">Output</span>
+            <ul><li>A written product thesis</li><li>Target economics</li><li>Go / no-go</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 -->
+      <div class="mspec-row up">
+        <span class="mspec-n">02</span>
+        <div class="mspec-main">
+          <h3 class="h3">Build — turn the opportunity into a brand.</h3>
+          <p class="body">
+            The opportunity becomes something a consumer can recognise: a name, a position,
+            an identity, packaging, a price architecture and a storefront designed to convert
+            traffic that arrives warm but impatient.
+          </p>
+          <p class="body mt-m">
+            This is also where manufacturing becomes real — specifications, samples, tolerances,
+            packaging construction, lead times and the unromantic detail of how the thing
+            survives a courier. A brand is a promise about a physical object; it is worth
+            getting the object right first.
+          </p>
+        </div>
+        <div class="io">
+          <div class="io-block">
+            <span class="mono mono--sig">Input</span>
+            <ul><li>Product thesis</li><li>Manufacturing and supply partners</li><li>Samples</li></ul>
+          </div>
+          <div class="io-block">
+            <span class="mono mono--sig">Output</span>
+            <ul><li>Brand identity and packaging</li><li>Direct-to-consumer storefront</li><li>Confirmed unit economics</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 03 -->
+      <div class="mspec-row up">
+        <span class="mspec-n">03</span>
+        <div class="mspec-main">
+          <h3 class="h3">Create — make people care.</h3>
+          <p class="body">
+            Content is produced in-house, shot for the platform it will live on, and built
+            around the thing that makes the product interesting rather than around a list
+            of its features.
+          </p>
+          <p class="body mt-m">
+            The standard is simple and unforgiving: would someone watch this if they were not
+            being sold anything? Most concepts fail that test, which is why we make many of
+            them. Creative is treated as a portfolio of experiments, not a single campaign —
+            volume in, signal out.
+          </p>
+        </div>
+        <div class="io">
+          <div class="io-block">
+            <span class="mono mono--sig">Input</span>
+            <ul><li>Product and brand</li><li>Creative concepts</li><li>In-house production</li></ul>
+          </div>
+          <div class="io-block">
+            <span class="mono mono--sig">Output</span>
+            <ul><li>Original short-form content</li><li>Tested creative angles</li><li>A house style worth repeating</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 -->
+      <div class="mspec-row up">
+        <span class="mspec-n">04</span>
+        <div class="mspec-main">
+          <h3 class="h3">Distribute — put it in front of people.</h3>
+          <p class="body">
+            Social is our distribution layer. TikTok, Instagram, Facebook and YouTube are
+            where the product is discovered, where curiosity forms and where reach is earned
+            rather than purchased.
+          </p>
+          <p class="body mt-m">
+            We publish continuously across platforms, read what travels and what does not, and
+            feed that back into the next round of creative. Organic performance is the honest
+            signal in this business: it cannot be bought, so it cannot lie about whether people
+            actually want the thing.
+          </p>
+        </div>
+        <div class="io">
+          <div class="io-block">
+            <span class="mono mono--sig">Input</span>
+            <ul><li>Content library</li><li>Platform accounts</li><li>Publishing cadence</li></ul>
+          </div>
+          <div class="io-block">
+            <span class="mono mono--sig">Output</span>
+            <ul><li>Organic reach</li><li>Product awareness and curiosity</li><li>Qualified traffic</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 05 -->
+      <div class="mspec-row up">
+        <span class="mspec-n">05</span>
+        <div class="mspec-main">
+          <h3 class="h3">Convert — turn attention into demand.</h3>
+          <p class="body">
+            Attention with nowhere to go is a cost, not an asset. Interested consumers arrive
+            at a storefront we own and operate, built around the exact thing that made them
+            curious — same language, same framing, no gap between what they saw and what
+            they find.
+          </p>
+          <p class="body mt-m">
+            From there it is operational: merchandising, checkout, shipping expectations,
+            customer service and the post-purchase experience that decides whether the brand
+            earns a second order.
+          </p>
+        </div>
+        <div class="io">
+          <div class="io-block">
+            <span class="mono mono--sig">Input</span>
+            <ul><li>Traffic from organic distribution</li><li>Storefront and merchandising</li></ul>
+          </div>
+          <div class="io-block">
+            <span class="mono mono--sig">Output</span>
+            <ul><li>Direct-to-consumer orders</li><li>Customer data and feedback</li><li>Proven demand</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- 06 -->
+      <div class="mspec-row up">
+        <span class="mspec-n">06</span>
+        <div class="mspec-main">
+          <h3 class="h3">Scale — build on what works.</h3>
+          <p class="body">
+            When a brand proves itself, the constraint stops being demand and starts being
+            everything behind it. Supply that holds under volume. Fulfilment that holds under
+            pressure. Inventory planning that does not strand cash. Partners who can move
+            from sample run to production run without the quality drifting.
+          </p>
+          <p class="body mt-m">
+            This is where manufacturing relationships stop being transactional and start being
+            the reason a business survives its own growth.
+          </p>
+        </div>
+        <div class="io">
+          <div class="io-block">
+            <span class="mono mono--sig">Input</span>
+            <ul><li>A brand with proven demand</li><li>Manufacturing capacity</li><li>Operating systems</li></ul>
+          </div>
+          <div class="io-block">
+            <span class="mono mono--sig">Output</span>
+            <ul><li>Sustained volume</li><li>Repeatable operations</li><li>The next product thesis</li></ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE LOOP ================= -->
+<section class="band" style="background:var(--ink-1)">
+  <div class="wrap">
+    <div class="marker up">
+      <span class="mono num">L</span>
+      <span class="mono mono--mid">The return path</span>
+      <span class="fill"></span>
+      <span class="mono end">06 → 01</span>
+    </div>
+
+    <div class="cols-2" style="align-items:end">
+      <h2 class="display display--sm up">It is a loop,<br>not a line.</h2>
+      <p class="body body--fg up" data-d="1" style="max-width:44ch">
+        Module 06 does not end the process — it restarts it. Every business we operate
+        produces information the next one begins with: which products hold up in the hands
+        of real customers, which creative ideas travel, which categories reward patience
+        and which suppliers perform when it matters. That accumulated judgement is the
+        actual asset. The brands are how it shows up.
+      </p>
+    </div>
+
+    <div class="loopline mt-l up" data-d="2">
+      <span class="mono mono--sig">06 → 01</span>
+      <span class="seg"></span>
+      <span class="mono">Scale returns to Identify</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOR MANUFACTURERS ================= -->
+<section class="band">
+  <div class="wrap">
+    <div class="marker up">
+      <span class="mono num">P</span>
+      <span class="mono mono--mid">If you manufacture or supply</span>
+      <span class="fill"></span>
+      <span class="mono end">Where you fit</span>
+    </div>
+
+    <h2 class="h2 up" style="max-width:20ch">You are module 02<br>and module 06.</h2>
+
+    <div class="flow mt-l">
+      <div style="--i:0">
+        <span class="mono mono--sig">At 02</span>
+        <svg class="gx" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#gx-samples"/></svg>
+        <h4>Samples</h4>
+        <p>Specification, sampling and getting a product to a standard worth building a brand on.</p>
+      </div>
+      <div style="--i:1">
+        <span class="mono mono--sig">At 02</span>
+        <svg class="gx" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#gx-terms"/></svg>
+        <h4>Terms</h4>
+        <p>Minimums, lead times, packaging and the commercial reality behind the unit economics.</p>
+      </div>
+      <div style="--i:2">
+        <span class="mono mono--sig">At 06</span>
+        <svg class="gx" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#gx-volume"/></svg>
+        <h4>Volume</h4>
+        <p>When a brand works, order volume changes quickly. Capacity matters more than price.</p>
+      </div>
+      <div style="--i:3">
+        <span class="mono mono--sig">At 06</span>
+        <svg class="gx" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><use href="#gx-consistency"/></svg>
+        <h4>Consistency</h4>
+        <p>Unit five thousand has to be the unit that was reviewed. That is the whole relationship.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="band invert cta-band">
+  <div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap above">
+    <div class="marker up">
+      <span class="mono num">→</span>
+      <span class="mono mono--mid">Work with us</span>
+      <span class="fill"></span>
+      <span class="mono end">Manufacturers · Suppliers · Partners</span>
+    </div>
+    <h2 class="display up" style="max-width:15ch">Bring the product.<br>We'll bring<br>the rest.</h2>
+    <div class="cols-2 mt-l" style="align-items:end">
+      <p class="lede up" data-d="1" style="max-width:38ch">
+        You make it well and ship it on time. We build the brand, make the content, run the storefront and carry the commercial risk.
+      </p>
+      <div class="stack-sm up" data-d="2" style="justify-items:start">
+        <a class="btn" href="/work-with-us"><span>Send inquiry</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a class="mono mono--mid" style="padding-top:10px" href="mailto:hello@ecombrands.us">hello@ecombrands.us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div>
+        <img class="mark" src="/assets/img/logo-white.png" alt="Ecom Brands">
+        <p class="body" style="max-width:30ch;font-size:.93rem">Building and operating digitally native consumer businesses.</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/how-we-build">How We Build</a></li>
+          <li><a href="/how-we-think">How We Think</a></li>
+          <li><a href="/work-with-us">Work With Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Partners</h5>
+        <ul>
+          <li><a href="/work-with-us#inquiry">Manufacturers</a></li>
+          <li><a href="/work-with-us#inquiry">Suppliers &amp; sourcing</a></li>
+          <li><a href="/work-with-us#inquiry">Business partnerships</a></li>
+          <li><a href="/work-with-us#inquiry">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <address>
+          Ecom Brands LLC<br>Newark, Delaware<br>United States<br>
+          <a href="mailto:hello@ecombrands.us">hello@ecombrands.us</a>
+        </address>
+      </div>
+    </div>
+    <div class="ftr-bot">
+      <span class="mono">© <span data-year>2026</span> Ecom Brands LLC · All rights reserved</span>
+      <span class="mono">ecombrands.us</span>
+      <span class="mono">Newark, DE · United States</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How We Think — Ecom Brands LLC</title>
+<meta name="description" content="The internet changed the product shelf. How Ecom Brands thinks about product discovery, content, organic distribution and consumer demand.">
+<meta name="theme-color" content="#060607">
+<link rel="icon" href="/assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/img/favicon.png">
+<meta property="og:title" content="How We Think — Ecom Brands LLC">
+<meta property="og:description" content="The shelf used to be a store. Now it looks like a feed.">
+<meta property="og:image" content="/assets/img/logo-square.png">
+<link rel="preload" href="/assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jbmono-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<!-- ============================================================================
+     ADHOC VECTOR SYSTEM — drawn for Ecom Brands, not borrowed from an icon set.
+     Rules: 64×64 grid, hairline strokes, no fills except one signal accent per
+     mark, geometry that describes the actual idea (a press, a tolerance band,
+     a selection bracket) rather than a generic pictogram.
+     Accent is hard-coded #FF3D00 because <use> shadow content can't be reached
+     by page CSS; every mark sits on a dark ground, so it never needs to invert.
+     ============================================================================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+
+  <!-- MANUFACTURERS — a press closing on a formed unit -->
+
+  <!-- SUPPLIERS — held stock, feeding out reliably -->
+
+  <!-- SOURCING — a field of options, one selected -->
+
+  <!-- BUSINESS PARTNERS — two systems with a shared operating overlap -->
+
+  <!-- DISCOVERY — the product inside something someone chose to watch -->
+  <symbol id="gx-discovery" viewBox="0 0 64 64">
+    <rect x="19" y="8" width="26" height="48" rx="3"/>
+    <path d="M19 18h26M19 46h26" opacity=".4"/>
+    <rect x="26" y="26" width="12" height="12" stroke="#FF3D00"/>
+    <path d="M28 51h8" opacity=".5"/>
+  </symbol>
+
+  <!-- CURIOSITY — interest radiating before intent exists -->
+  <symbol id="gx-curiosity" viewBox="0 0 64 64">
+    <circle cx="20" cy="32" r="3.5" fill="#FF3D00" stroke="#FF3D00"/>
+    <path d="M28 23a13 13 0 010 18"/>
+    <path d="M35 17a22 22 0 010 30" opacity=".68"/>
+    <path d="M42 11a31 31 0 010 42" opacity=".38"/>
+  </symbol>
+
+  <!-- SEARCH — the consumer goes looking, and finds one match -->
+  <symbol id="gx-search" viewBox="0 0 64 64">
+    <circle cx="27" cy="27" r="14"/>
+    <path d="M37.5 37.5L52 52" stroke-linecap="square"/>
+    <path d="M20 24h14" opacity=".5"/>
+    <path d="M20 31h8" stroke="#FF3D00"/>
+  </symbol>
+
+  <!-- PURCHASE — attention arriving at a storefront we own -->
+  <symbol id="gx-purchase" viewBox="0 0 64 64">
+    <path d="M6 32h18"/>
+    <path d="M20 28l4 4-4 4"/>
+    <rect x="31" y="18" width="26" height="28" stroke="#FF3D00"/>
+    <path d="M31 26h26" stroke="#FF3D00" opacity=".6"/>
+    <path d="M38 35h12" opacity=".55"/>
+  </symbol>
+
+  <!-- SAMPLES — one unit pulled from the batch and examined -->
+
+  <!-- TERMS — two positions meeting on one line -->
+
+  <!-- VOLUME — order size moving, fast -->
+
+  <!-- CONSISTENCY — identical units inside a tolerance band -->
+
+  <!-- ==========================================================================
+       PRODUCT ARCHETYPES — deliberately generic packaging formats, drawn in the
+       same hairline language as the rest of the system. These are object types
+       (a bottle, a tub, a pouch), never Ecom Brands products: the section is an
+       argument about the shelf, not a catalogue. Stroke is currentColor so a
+       single CSS property turns the hot cell orange.
+       ========================================================================== -->
+
+  <!-- ==========================================================================
+       MODEL A STATIONS — the physical chain. Deliberately heavier, more literal
+       objects than the Model B marks: the old shelf was made of buildings and
+       furniture, the new one is made of signals.
+       ========================================================================== -->
+
+  <!-- ==========================================================================
+       MODEL A STATIONS — the physical chain. Deliberately heavier, more literal
+       objects than the Model B marks: the old shelf was made of buildings and
+       furniture, the new one is made of signals.
+       ========================================================================== -->
+
+  <symbol id="dg-store" viewBox="0 0 64 64"><!-- a shop you have to walk into -->
+    <path d="M11 24h42v30H11z"/>
+    <path d="M11 24l5-11h32l5 11"/>
+    <path d="M27 54V39h10v15"/>
+    <path d="M16 31h9v7h-9z" opacity=".5"/>
+    <path d="M39 31h9v7h-9z" opacity=".5"/>
+  </symbol>
+
+  <symbol id="dg-shelf" viewBox="0 0 64 64"><!-- facings on a gondola -->
+    <path d="M9 24h46M9 40h46M9 54h46"/>
+    <path d="M15 13h8v11h-8zM28 11h8v13h-8zM41 14h8v10h-8z" opacity=".7"/>
+    <path d="M15 30h8v10h-8zM28 29h8v11h-8zM41 31h8v9h-8z" opacity=".7"/>
+  </symbol>
+
+  <symbol id="dg-product" viewBox="0 0 64 64"><!-- one unit, one facing -->
+    <path d="M26 9h12v8l4 7v30H22V24l4-7z"/>
+    <path d="M22 34h20" opacity=".45"/>
+    <path d="M26 17h12" opacity=".45"/>
+  </symbol>
+
+  <symbol id="dg-consumer" viewBox="0 0 64 64"><!-- the person at the end of it -->
+    <circle cx="32" cy="21" r="8.5"/>
+    <path d="M13 54a19 19 0 0138 0"/>
+  </symbol>
+
+  <symbol id="gx-content" viewBox="0 0 64 64"><!-- something made to be watched -->
+    <rect x="17" y="7" width="30" height="50" rx="3"/>
+    <path d="M28 23l14 9-14 9z"/>
+    <path d="M17 48h30" opacity=".35"/>
+  </symbol>
+
+</defs></svg>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Ecom Brands LLC — home">
+      <img src="/assets/img/logo-white.png" alt="Ecom Brands">
+      <span class="tag">Ecom Brands LLC</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="/about">About</a>
+      <a href="/how-we-build">How We Build</a>
+      <a href="/how-we-think" aria-current="page">How We Think</a>
+      <a class="nav-cta" href="/work-with-us">Work with us&nbsp;→</a>
+    </nav>
+    <button class="burger" aria-expanded="false" aria-controls="sheet">Menu</button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet">
+  <a href="/about"><span>01</span> About</a>
+  <a href="/how-we-build"><span>02</span> How&nbsp;We&nbsp;Build</a>
+  <a href="/how-we-think"><span>03</span> How&nbsp;We&nbsp;Think</a>
+  <a href="/work-with-us"><span>04</span> Work&nbsp;With&nbsp;Us</a>
+  <div class="foot">
+    <p class="mono mono--mid">hello@ecombrands.us</p>
+    <p class="mono">Newark, Delaware · United States</p>
+  </div>
+</div>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero hero--page" data-lit>
+  <div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap above">
+    <div class="rail">
+      <span class="mono mono--sig">03</span>
+      <span class="mono mono--mid">How we think</span>
+      <span class="sp"></span>
+      <span class="mono">The premise · three notes</span>
+    </div>
+
+    <h1 class="display">
+      <span class="reveal-line"><span style="--i:0">The internet</span></span>
+      <span class="reveal-line"><span style="--i:1">changed the</span></span>
+      <span class="reveal-line"><span style="--i:2">product shelf<i class="pd">.</i></span></span>
+    </h1>
+
+    <div class="hero-foot">
+      <p class="lede lede--wide">
+        The shelf used to be a store. Now it looks like a feed —
+        and almost everything about building a consumer brand follows from that.
+      </p>
+      <p class="body" style="max-width:34ch">
+        Scroll to watch one become the other.
+      </p>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <i></i>
+    <span class="mono">Scroll</span>
+  </div>
+</section>
+
+<!-- ================= SHELF → FEED MORPH ================= -->
+<section class="morph-scene" style="height:280vh;background:var(--black)">
+  <div class="morph-sticky">
+    <div class="wrap" style="width:100%">
+
+      <div class="morph-head">
+        <div class="mlbl" data-lbl="shelf">
+          <span class="mono mono--sig">Model A · the old shelf</span>
+          <h3>Store → Shelf → Product → Consumer</h3>
+        </div>
+        <div class="mlbl" data-lbl="feed" style="opacity:0">
+          <span class="mono mono--sig">Model B · the shelf now</span>
+          <h3>Content → Discovery → Curiosity → Search → Purchase</h3>
+        </div>
+      </div>
+
+      <p class="sr">The old model ran in one line: a store, a shelf inside it, a product on that shelf, and a consumer standing in front of it. The model now runs the other way round: content goes out to everyone, a fraction of them discover the product, fewer become curious, fewer still search for it, and one of them buys.</p>
+      <div class="morph-stage" aria-hidden="true">
+        <svg class="chain" xmlns="http://www.w3.org/2000/svg">
+          <g class="ch-links"></g>
+          <g class="ch-nodes">
+      <g class="ch-node" data-i="0">
+          <rect class="fr"/>
+          <use class="ga"/><use class="gb"/>
+          <text class="ix"></text>
+          <text class="la"></text><text class="lb"></text>
+        </g>
+      <g class="ch-node" data-i="1">
+          <rect class="fr"/>
+          <use class="ga"/><use class="gb"/>
+          <text class="ix"></text>
+          <text class="la"></text><text class="lb"></text>
+        </g>
+      <g class="ch-node" data-i="2">
+          <rect class="fr"/>
+          <use class="ga"/><use class="gb"/>
+          <text class="ix"></text>
+          <text class="la"></text><text class="lb"></text>
+        </g>
+      <g class="ch-node" data-i="3">
+          <rect class="fr"/>
+          <use class="ga"/><use class="gb"/>
+          <text class="ix"></text>
+          <text class="la"></text><text class="lb"></text>
+        </g>
+      <g class="ch-node" data-i="4">
+          <rect class="fr"/>
+          <use class="ga"/><use class="gb"/>
+          <text class="ix"></text>
+          <text class="la"></text><text class="lb"></text>
+        </g>
+          </g>
+        </svg>
+      </div>
+
+      <div class="rail morph-rail" style="margin:22px 0 0;padding:14px 0 0;border-bottom:0;border-top:1px solid var(--line)">
+        <span class="swap"><i class="dot"></i>
+          <b class="cf--shelf">Reach is limited by floor space.</b>
+          <b class="cf--feed">Reach is limited by attention.</b>
+        </span>
+        <span class="sp"></span>
+        <span class="mono">One rail becomes a broadcast. Most of it dies. One thread converts.</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= THE TWO MODELS ================= -->
+<section class="band">
+  <div class="wrap">
+    <div class="marker up">
+      <span class="mono num">01</span>
+      <span class="mono mono--mid">The two models</span>
+      <span class="fill"></span>
+      <span class="mono end">Side by side</span>
+    </div>
+
+    <div class="cols-2" style="align-items:end;margin-bottom:clamp(24px,4vw,44px)">
+      <h2 class="h2 up">Nobody walks<br>past a product<br>anymore.</h2>
+      <p class="body up" data-d="1" style="max-width:46ch">
+        Discovery used to require proximity: you had to be in the shop. The change is not
+        that shopping moved online — catalogues did that decades ago. It is that the
+        <em>encounter</em> moved, and with it every rule about who gets to sell anything.
+      </p>
+    </div>
+
+    <div class="cmp">
+      <div class="cmp-head up">
+        <span class="mono"></span>
+        <span class="mono a">Model A &middot; the old shelf</span>
+        <span class="mono mono--sig b">Model B &middot; the shelf now</span>
+      </div>
+      <div class="cmp-row up">
+        <span class="mono k">Where discovery happens</span>
+        <p class="a">Inside a store the consumer had to walk into.</p>
+        <p class="b">Inside content the consumer chose to watch.</p>
+      </div>
+      <div class="cmp-row up">
+        <span class="mono k">What limits reach</span>
+        <p class="a">Floor space, and the buyer who decides who gets it.</p>
+        <p class="b">Whether the thing is worth watching.</p>
+      </div>
+      <div class="cmp-row up">
+        <span class="mono k">Who controls distribution</span>
+        <p class="a">Retailers, distributors and category buyers.</p>
+        <p class="b">Whoever makes something people pass on.</p>
+      </div>
+      <div class="cmp-row up">
+        <span class="mono k">The cost of being seen</span>
+        <p class="a">Listing fees, slotting, and a relationship built first.</p>
+        <p class="b">Production effort, and a lot of attempts that go nowhere.</p>
+      </div>
+      <div class="cmp-row up">
+        <span class="mono k">Who is allowed to compete</span>
+        <p class="a">Companies with scale, terms and existing distribution.</p>
+        <p class="b">Anyone who can make something worth a second of attention.</p>
+      </div>
+      <div class="cmp-row up">
+        <span class="mono k">What decides the outcome</span>
+        <p class="a">Shelf position.</p>
+        <p class="b">Whether anyone stops scrolling.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOTES ================= -->
+<section class="band" style="background:var(--ink-1)">
+  <div class="wrap">
+    <div class="marker up">
+      <span class="mono num">02</span>
+      <span class="mono mono--mid">Notes</span>
+      <span class="fill"></span>
+      <span class="mono end">Three things we believe</span>
+    </div>
+
+    <!-- NOTE 01 -->
+    <article class="piece up">
+      <div class="piece-grid">
+        <div class="stack-sm">
+          <span class="mono mono--sig">Note 01</span>
+          <h3 class="h3">The shelf moved, and the economics moved with it</h3>
+        </div>
+        <div class="piece-body">
+          <p>Retail distribution used to be the hard part. If your product was on the shelf
+          at eye level in enough stores, you had a business; if it wasn't, you didn't — and
+          getting there required relationships, fees and scale that ruled out almost everyone.</p>
+
+          <p>That gate is gone, and a stranger one has replaced it. Anyone can now reach
+          a hundred million people for nothing. What they cannot do is be interesting enough
+          to deserve it. Distribution stopped being a question of access and became a question
+          of whether the thing you made is worth someone's attention — which is a much harder
+          problem, and a much fairer one.</p>
+
+          <div class="pull">The barrier moved from access to attention. Attention cannot be bought at the door.</div>
+
+          <p>This changes what a consumer company has to be good at. Shelf space rewarded
+          negotiation and logistics. The feed rewards taste, speed and the willingness to make
+          a hundred things knowing that ninety of them will be ignored. It is a creative
+          discipline with a commercial scoreboard attached, and most companies are structured
+          for neither.</p>
+
+          <p>We built ours the other way around: production capability first, then the brands
+          to point it at.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- NOTE 02 -->
+    <article class="piece up">
+      <div class="piece-grid">
+        <div class="stack-sm">
+          <span class="mono mono--sig">Note 02</span>
+          <h3 class="h3">Some products are built for the feed. Most are not.</h3>
+        </div>
+        <div class="piece-body">
+          <p>A product that performs in a feed has a specific quality, and it is not
+          attractiveness. It is <em>legibility</em>: you can understand what it does, and why
+          that is interesting, in about two seconds, without sound, on a small screen, from
+          a stranger.</p>
+
+          <p>That usually means a visible transformation — something changes state, fits
+          somewhere unexpected, solves a problem you recognise the moment you see it, or simply
+          looks better than it has any right to. Products that require explanation do not
+          travel. Products that demonstrate themselves do.</p>
+
+          <p>This is a sourcing filter as much as a creative one. When we evaluate a product
+          we are asking two questions at the same time: can this be manufactured well and
+          shipped economically, and is there a shot of it that stops a thumb? A product that
+          passes only the first test is a logistics exercise. A product that passes only the
+          second is a novelty that will be returned. We need both, and the second one is
+          where most sourcing decisions quietly fail.</p>
+
+          <div class="pull">If the product cannot demonstrate itself, no amount of content will rescue it.</div>
+
+          <p>It also explains why we care so much about the physical object. The content sells
+          the first unit. The object decides whether there is a second — and whether the
+          review under the video helps or ends the brand.</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- NOTE 03 -->
+    <article class="piece up">
+      <div class="piece-grid">
+        <div class="stack-sm">
+          <span class="mono mono--sig">Note 03</span>
+          <h3 class="h3">Organic distribution is an asset. Paid distribution is an expense.</h3>
+        </div>
+        <div class="piece-body">
+          <p>Both put a product in front of a consumer, so they are often treated as
+          interchangeable with different price tags. They are not. One of them stops the moment
+          you stop paying for it. The other keeps working, and occasionally keeps working for
+          years.</p>
+
+          <p>Paid distribution is rented and priced by auction, which means it gets more
+          expensive precisely when it is working — success invites competition for the same
+          impression. Organic distribution is earned and priced by quality. It cannot be
+          purchased, which is exactly why it is valuable: no better-funded competitor can
+          outbid you for it.</p>
+
+          <p>It is also the only honest measurement we have. Paid reach tells you what a budget
+          bought. Organic reach tells you whether people actually wanted the thing — which
+          is the only signal worth building a supply chain around.</p>
+
+          <div class="pull">Organic performance is the one number in this business that cannot lie to you.</div>
+
+          <p>None of which makes paid distribution wrong. It makes it a multiplier, applied to
+          something already proven, rather than a substitute for proof. We would rather find
+          out for free whether a product deserves to exist, and spend money only on the ones
+          that turn out to.</p>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="band invert cta-band">
+  <div class="gridlines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="wrap above">
+    <div class="marker up">
+      <span class="mono num">→</span>
+      <span class="mono mono--mid">Work with us</span>
+      <span class="fill"></span>
+      <span class="mono end">Manufacturers · Suppliers · Partners</span>
+    </div>
+    <h2 class="display up" style="max-width:14ch">If you make<br>things, we<br>should talk.</h2>
+    <div class="cols-2 mt-l" style="align-items:end">
+      <p class="lede up" data-d="1" style="max-width:38ch">
+        We are looking for manufacturing and supply partners for consumer products.
+      </p>
+      <div class="stack-sm up" data-d="2" style="justify-items:start">
+        <a class="btn" href="/work-with-us"><span>Send inquiry</span><span class="arrow" aria-hidden="true">→</span></a>
+        <a class="mono mono--mid" style="padding-top:10px" href="mailto:hello@ecombrands.us">hello@ecombrands.us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div>
+        <img class="mark" src="/assets/img/logo-white.png" alt="Ecom Brands">
+        <p class="body" style="max-width:30ch;font-size:.93rem">Building and operating digitally native consumer businesses.</p>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/how-we-build">How We Build</a></li>
+          <li><a href="/how-we-think">How We Think</a></li>
+          <li><a href="/work-with-us">Work With Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Partners</h5>
+        <ul>
+          <li><a href="/work-with-us#inquiry">Manufacturers</a></li>
+          <li><a href="/work-with-us#inquiry">Suppliers &amp; sourcing</a></li>
+          <li><a href="/work-with-us#inquiry">Business partnerships</a></li>
+          <li><a href="/work-with-us#inquiry">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <address>
+          Ecom Brands LLC<br>Newark, Delaware<br>United States<br>
+          <a href="mailto:hello@ecombrands.us">hello@ecombrands.us</a>
+        </address>
+      </div>
+    </div>
+    <div class="ftr-bot">
+      <span class="mono">© <span data-year>2026</span> Ecom Brands LLC · All rights reserved</span>
+      <span class="mono">ecombrands.us</span>
+      <span class="mono">Newark, DE · United States</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
