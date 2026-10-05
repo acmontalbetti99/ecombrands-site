@@ -8,10 +8,15 @@
  * Environment variables (set in Vercel → Settings → Environment Variables):
  *   RESEND_API_KEY   required   re_xxxxxxxx from resend.com/api-keys
  *   INQUIRY_TO       optional   where inquiries land. Default hello@ecombrands.us
- *   INQUIRY_FROM     optional   verified sender. Default Ecom Brands <inquiries@send.ecombrands.us>
+ *   INQUIRY_FROM     optional   verified sender. Default Ecombrands <noreply@send.ecombrands.us>
+ *   INQUIRY_BCC      optional   blind copy, comma-separated. Unset = no copy.
  *
  * The visitor's address goes into Reply-To, so answering an inquiry is just
  * hitting reply — never copy-pasting an address out of the body.
+ *
+ * INQUIRY_BCC is a blind copy in the real sense: it travels in the envelope,
+ * not in a header, so nobody who fills in the form can see it. Leave the
+ * variable unset and the key disappears from the payload entirely.
  */
 
 const RESEND_ENDPOINT = 'https://api.resend.com/emails';
@@ -114,13 +119,20 @@ module.exports = async (req, res) => {
 
   const { text, html } = render(f);
 
+  // Comma-separated, blanks dropped. Unset or empty → the key is omitted below.
+  const bcc = (process.env.INQUIRY_BCC || '')
+    .split(',')
+    .map((a) => a.trim())
+    .filter(Boolean);
+
   try {
     const r = await fetch(RESEND_ENDPOINT, {
       method: 'POST',
       headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        from: process.env.INQUIRY_FROM || 'Ecom Brands <inquiries@send.ecombrands.us>',
+        from: process.env.INQUIRY_FROM || 'Ecombrands <noreply@send.ecombrands.us>',
         to: [process.env.INQUIRY_TO || 'hello@ecombrands.us'],
+        ...(bcc.length ? { bcc } : {}),
         reply_to: f.email,
         subject: `[${f.type}] ${f.company || f.name}`,
         text,
